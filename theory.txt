@@ -1,0 +1,88 @@
+Class 47 OOP
+=====================
+
+
+1. Constructor >>> Build  =>   __construct()
+2. Destructor  >>> Destroy =>   __destructor ()
+3. Inheriance  >>> 
+
+
+
+=================
+Class 46 PHP (OOP)
+----------------
+OOP  = Object Oriented Programing
+>>> Modern Language like PHP, JAVA, Python, C#, C++
+
+======== (OOP) =======
+
+object => Class
+Car (Object)  == Color, Model, Engine, Wheel, (class/blue print)
+
+Class Name ALways Capital Letter use kora valo >>> Class ClassName
+
+Class ClassName {
+    properties (variable, method)
+}
+
+
+=======Access Modifier=====
+Public
+Private
+Protected
+
+===================================
+<?php
+    Class Car{
+       public function color (){
+        echo 'red';
+        }
+
+        public function engine(){
+            echo '4000cc';
+        }
+
+        public function model(){
+            echo 'B346Y';
+        }
+    }
+
+    // new Car(); //object
+
+    // variable
+    $objectCar = new Car();
+
+    $objectCar->color();
+    echo'<br>';
+    $objectCar->model();
+    echo'<br>';
+    $objectCar->engine();
+
+
+    Class Calculator {
+        public function sum(){
+            $x = 20;
+            $y = 30;
+            $result = $x+$y;
+            return $result;
+            // echo '$result'
+        }
+        public function sub(){
+            $x = 40;
+            $y = 30;
+            $result = $x-$y;
+            return $result;
+            // echo '$result'
+        }
+    }
+    
+     $objectCalculator = new Calculator();
+
+        echo 'Calculator Class <br>';
+
+        echo $objectCalculator->sum();
+        echo'<br>';
+
+        // $objectCalculator->sum();
+        echo $objectCalculator->sub();
+?>
